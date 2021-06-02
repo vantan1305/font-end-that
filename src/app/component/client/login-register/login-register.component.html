@@ -1,0 +1,58 @@
+<!-- Login Start -->
+<div class="login">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="register-form">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>Tài Khoản</label>
+                            <input class="form-control" type="text" placeholder="Username" [(ngModel)]="dangKyForm.username">
+                        </div>
+                        <div class="col-md-6">
+                            <label>Họ Tên</label>
+                            <input class="form-control" type="text" placeholder="Last Name" [(ngModel)]="dangKyForm.name" >
+                        </div>
+                        <div class="col-md-6">
+                            <label>E-mail</label>
+                            <input class="form-control" type="email" placeholder="E-mail" [(ngModel)]="dangKyForm.email">
+                        </div>
+                        <div class="col-md-6">
+                            <label>Điện Thoại</label>
+                            <input class="form-control" type="text" placeholder="Mobile No" [(ngModel)]="dangKyForm.phoneNumber">
+                        </div>
+                        <div class="col-md-6">
+                            <label>Mật Khẩu</label>
+                            <input class="form-control" type="password" placeholder="Password" [(ngModel)]="dangKyForm.password">
+                        </div>
+                        <div class="col-md-6">
+                            <label>Nhập Lại Mật Khẩu</label>
+                            <input class="form-control" type="password" placeholder="Password" [(ngModel)]="dangKyForm.repassword">
+                        </div>
+                        <div class="col-md-12">
+                            <button class="btn" (click)="dangky()">Đăng Ký</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="login-form">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>Username</label>
+                            <input class="form-control" type="text" placeholder="Username" [(ngModel)]="loginForm.username">
+                        </div>
+                        <div class="col-md-6">
+                            <label>Password</label>
+                            <input class="form-control" type="password" placeholder="Password" [(ngModel)]="loginForm.password">
+                        </div>
+                        <div class="col-md-12">
+                            <button class="btn" (click)="login()">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Login End -->
